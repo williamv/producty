@@ -2,9 +2,9 @@ development:
   adapter: postgresql
   encoding: unicode
   database: producty_development
-  pool: 5
-  username: producty
+  username: postgres
   password:
+  host: localhost
 
 
 

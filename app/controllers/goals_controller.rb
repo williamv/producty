@@ -24,6 +24,7 @@ class GoalsController < ApplicationController
   # GET /goals/new
   # GET /goals/new.json
   def new
+    @product = Product.find(params[:product_id])
     @goal = Goal.new
 
     respond_to do |format|
@@ -44,7 +45,7 @@ class GoalsController < ApplicationController
 
     respond_to do |format|
       if @goal.save
-        format.html { redirect_to @goal, notice: 'Goal was successfully created.' }
+        format.html { redirect_to @goal.product, notice: 'Goal was successfully created.' }
         format.json { render json: @goal, status: :created, location: @goal }
       else
         format.html { render action: "new" }

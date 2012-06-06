@@ -1,4 +1,4 @@
-<%= form_for(@goal) do |f| %>
+<%= form_for([@product,@goal]) do |f| %>
   <% if @goal.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@goal.errors.count, "error") %> prohibited this goal from being saved:</h2>
@@ -14,6 +14,7 @@
   <div class="field">
     <%= f.label :goal %><br />
     <%= f.text_field :goal %>
+    <%= hidden_field_tag "goal[product_id]", @product.id %>
   </div>
   <div class="actions">
     <%= f.submit %>

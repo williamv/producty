@@ -1,7 +1,9 @@
 Producty::Application.routes.draw do
-  resources :goals
 
-  resources :products
+  resources :products do
+  resources :goals
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

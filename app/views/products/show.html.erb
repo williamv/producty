@@ -1,15 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
-  <%= @product.name %>
+ <h2> <%= @product.name %>   </h2>
 </p>
 
 <p>
-  <b>Overview:</b>
+  <b>Overview:</b>    </br>
   <%= @product.overview %>
 </p>
 
+<h2>Product Goals</h2>
+<ul>
+<% @product.goals.each do |goal| %>
+    <li><%= goal.goal %></li>
+<% end %>
+</ul>
 
+
+<%= link_to 'Add a Goal for this Product', new_product_goal_path(@product) %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back to the product index', products_path %>

@@ -74,10 +74,11 @@ class GoalsController < ApplicationController
   # DELETE /goals/1.json
   def destroy
     @goal = Goal.find(params[:id])
+    product = @goal.product
     @goal.destroy
 
     respond_to do |format|
-      format.html { redirect_to goals_url }
+      format.html { redirect_to product_url(product)}
       format.json { head :no_content }
     end
   end

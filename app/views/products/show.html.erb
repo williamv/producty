@@ -12,9 +12,12 @@
 <h2>Product Goals</h2>
 <ul>
 <% @product.goals.each do |goal| %>
-
-#Need to figure out how to route back to the product after deleting the product goal
-    <li><%= goal.goal %>   <%= button_to 'X', product_goals_path([@product, @goal]), :method => 'delete' %></li>
+    <li>
+      <%= goal.goal %>
+      <%= link_to "X", [goal.product, goal],
+                  :confirm => "Are you sure?",
+                  :method => 'delete'%>
+    </li>
 <% end %>
 </ul>
 

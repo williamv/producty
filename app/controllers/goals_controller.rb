@@ -74,10 +74,12 @@ class GoalsController < ApplicationController
   # DELETE /goals/1.json
   def destroy
     @goal = Goal.find(params[:id])
+    # I added the line right below to set a local variable to identify the goals parent product
     product = @goal.product
     @goal.destroy
 
     respond_to do |format|
+      #I added the line below to switch from the default resource url to the product url
       format.html { redirect_to product_url(product)}
       format.json { head :no_content }
     end

@@ -4,8 +4,6 @@
     <list default="true" id="75ad31e7-9294-4f45-81fc-7116ed698c1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/goals_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/goals_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/show.html.erb" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" />
     </list>
     <ignored path="producty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +37,7 @@
       <file leaf-file-name="goals_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/goals_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="16" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.9010819">
+            <state line="76" column="0" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.8145286">
               <folding />
             </state>
           </provider>
@@ -700,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/goals_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="16" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.9010819">
+        <state line="76" column="0" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.8145286">
           <folding />
         </state>
       </provider>

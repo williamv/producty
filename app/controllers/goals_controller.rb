@@ -35,6 +35,7 @@ class GoalsController < ApplicationController
 
   # GET /goals/1/edit
   def edit
+    @product = Product.find(params[:product_id])
     @goal = Goal.find(params[:id])
   end
 
@@ -57,11 +58,12 @@ class GoalsController < ApplicationController
   # PUT /goals/1
   # PUT /goals/1.json
   def update
+    @product = Product.find(params[:product_id])
     @goal = Goal.find(params[:id])
 
     respond_to do |format|
       if @goal.update_attributes(params[:goal])
-        format.html { redirect_to @goal, notice: 'Goal was successfully updated.' }
+        format.html { redirect_to @product, notice: 'Goal was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

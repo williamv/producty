@@ -15,6 +15,7 @@
 <% @product.goals.each do |goal| %>
     <li>
       <%= goal.goal %>
+      <%= link_to "edit", edit_product_goal_path(@product,goal)%>
       <%= link_to "delete", [goal.product, goal],
                   :confirm => "Are you sure?",
                   :method => 'delete'%>

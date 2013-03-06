@@ -1,6 +1,4 @@
 Producty::Application.routes.draw do
-
-
   resources :products do
   resources :goals
   end

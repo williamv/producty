@@ -1,4 +1,4 @@
-Producty is my attempt to learn rails. It's a project designed for product managers to better communicate the process of building a product to outside stakeholders.
+Producty is my attempt to learn to code using rails. It's a project designed for product managers to better communicate the process of building a product to outside stakeholders.
 
 Release progress:
 Release 1 (already live!) - Users can add products and product goals with basic CSS

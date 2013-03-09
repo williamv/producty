@@ -1,4 +1,4 @@
-/*Tables*/
+/*TABLES*/
 table
 {
 border-collapse:collapse;
@@ -37,3 +37,11 @@ th
 background-color:green;
 color:white;
 }
+
+/*Headers*/
+h1,h2,h3,h4
+{
+font-family: sans-serif;	
+}
+
+

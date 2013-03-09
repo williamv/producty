@@ -1,11 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang ='en-US'>
+<head>
+  <title> Product </title>
+   <link rel="stylesheet href="/assets/stylesheets/application.css">
+ </head>
+<body>
 <p id="notice"><%= notice %></p>
 
 <p>
- <h2> <%= @product.name %>   </h2>
+ <h2> <%= @product.name %></h2>
+
 </p>
 
 <p>
-  <b>Overview:</b>    </br>
   <%= @product.overview %>
 </p>
 
@@ -24,7 +31,9 @@
 
 </ul>
 
-<%= link_to '<= Back to the Product List', products_path %>      |
- <%= link_to 'Edit', edit_product_path(@product) %>              |
+<%= link_to '<= Back to the Product List', products_path %>     |<%= link_to '  Edit Product',edit_product_path(@product) %>     |
 <%= link_to '+ Add a Product Goal', new_product_goal_path(@product) %>
+
+</body>
+</html>
 

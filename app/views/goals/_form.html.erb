@@ -1,3 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang ='en-US'>
+<head>
+    <link rel="stylesheet href="/assets/stylesheets/application.css">
+<title> Edit goals </title>
+</head>
+<body>
+
 <%= form_for([@product,@goal]) do |f| %>
   <% if @goal.errors.any? %>
     <div id="error_explanation">
@@ -11,12 +19,25 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="med-text">
     <%= f.label :goal %><br />
     <%= f.text_field :goal %>
     <%= hidden_field_tag "goal[product_id]", @product.id %>
   </div>
+
+  <div class="number">
+    <%= f.label :size %><br />   
+    <%= f.text_field :size %>
+  </div>
+
+  <div class="number">
+    <%= f.label :completion_percentage %><br />   
+    <%= f.text_field :completion_percentage %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</body>
+</html>

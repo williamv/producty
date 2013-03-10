@@ -11,13 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120611234435) do
+ActiveRecord::Schema.define(:version => 20130310202558) do
 
   create_table "goals", :force => true do |t|
     t.string   "goal"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
     t.integer  "product_id"
+    t.integer  "completion_percentage"
+    t.integer  "size"
   end
 
   create_table "products", :force => true do |t|
@@ -25,6 +27,15 @@ ActiveRecord::Schema.define(:version => 20120611234435) do
     t.text     "overview"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "themes", :force => true do |t|
+    t.string   "theme"
+    t.string   "progress"
+    t.datetime "created_at",            :null => false
+    t.string   "progress_last_updated"
+    t.text     "description"
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "trackerstories", :force => true do |t|

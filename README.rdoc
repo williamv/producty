@@ -3,7 +3,7 @@ Producty is my attempt to learn to code using rails. It's a project designed for
 Release progress:
 Release 1 (already live!) - Users can add products and product goals with basic CSS
 
-Release 2 - Users can add themes to goals, track progress, and record changes to the goals/themese
+Release 2 - Users can add themes to goals, track progress, and record changes to the goals/themes
 
 Release 3 - Authentication and Authorization
 

@@ -29,19 +29,4 @@ ActiveRecord::Schema.define(:version => 20130310202558) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "themes", :force => true do |t|
-    t.string   "theme"
-    t.string   "progress"
-    t.datetime "created_at",            :null => false
-    t.string   "progress_last_updated"
-    t.text     "description"
-    t.datetime "updated_at",            :null => false
-  end
-
-  create_table "trackerstories", :force => true do |t|
-    t.string   "story"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
 end

@@ -1,6 +1,8 @@
 class GoalsController < ApplicationController
   # GET /goals
   # GET /goals.json
+  before_filter :authenticate_user!
+
   def index
     @goals = Goal.all
 

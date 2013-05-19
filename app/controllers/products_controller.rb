@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
+  before_filter :authenticate_user!
+
   def index
     @products = Product.all
 

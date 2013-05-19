@@ -1,11 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang ='en-US'>
-<head>
-    <link rel="stylesheet href="/assets/stylesheets/application.css">
-<title> Edit goals </title>
-</head>
-<body>
-
 <%= form_for([@product, @goal]) do |f| %>
   <% if @goal.errors.any? %>
     <div id="error_explanation">
@@ -39,5 +31,3 @@
     <%= f.submit %>
   </div>
 <% end %>
-</body>
-</html>

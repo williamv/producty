@@ -1,39 +1,32 @@
 /*TABLES*/
-table
-{
-border-collapse:collapse;
-}
 
 table 
 {
 width:100%;
+width: 100%
+border-collapse: collapse;
 }
 th
 {
 height:10%;
 width:100%;
+background-color:green;
+color:white;
 }
 
 td
 {
 height:1.5em;
 vertical-align:bottom;
-}
-
-td
-{
 padding:1.1em;
 }
+
 
 table, td, th
 {
 border:1px solid green;
 }
-th
-{
-background-color:green;
-color:white;
-}
+
 
 /*Headers*/
 h1,h2,h3,h4

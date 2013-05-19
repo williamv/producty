@@ -19,9 +19,12 @@
       <%= link_to "delete", [goal.product, goal],
                   :confirm => "Are you sure?",
                   :method => 'delete'%>
+          <ul>
+            <li> <%= goal.size %> total points  </li>
+            <li>Completion perecentage <%= goal.completion_percentage %></li>
+          </ul>
     </li>
-      Points <%= goal.size %> <br>
-      Completion perecentage <%= goal.completion_percentage %> <br>
+
 
 <% end %>
 

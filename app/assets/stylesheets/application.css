@@ -1,6 +1,3 @@
-/*html*/
-
-
 /*body*/
 body {
 	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica,
@@ -63,6 +60,12 @@ input[type="text"] {
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	margin-bottom: 1em
+
+}
+
+label {
+	display: block;
 }
 
 /*text areas*/
@@ -70,4 +73,22 @@ textarea {
 	height: auto;
 	width: 50%;
 	height: 30px;
+	margin-bottom: 1em
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	display: none;
+}
+
+.actions {
+	padding-top: 1.2em;
+}
+
+ul {
+	padding-left: 1em;
+	margin-bottom: .5em;
 }

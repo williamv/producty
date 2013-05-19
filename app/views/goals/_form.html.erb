@@ -1,7 +1,7 @@
 <%= form_for([@product, @goal]) do |f| %>
   <% if @goal.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@goal.errors.count, "error") %> prohibited this goal from being saved:</h2>
+      <h2><%= pluralize(@goal.errors.count, "error") %> stopped this goal from being saved:</h2>
 
       <ul>
       <% @goal.errors.full_messages.each do |msg| %>
@@ -11,23 +11,30 @@
     </div>
   <% end %>
 
-  <div class="med-text">
-    <%= f.label :goal %><br />
-    <%= f.text_field :goal %>
-    <%= hidden_field_tag "goal[product_id]", @product.id %>
-  </div>
+<form>
+  <fieldset>
+    <legend> Product Goal Info</legend>
+      <div class="med-text">
+        <%= f.label :goal %>
+        <%= f.text_field :goal %>
+        <%= hidden_field_tag "goal[product_id]", @product.id %>
+      </div>
 
-  <div class="number">
-    <%= f.label :size %><br />   
-    <%= f.text_field :size %>
-  </div>
+      <div class="number">
+        <%= f.label :size %>  
+        <%= f.text_field :size %>
+      </div>
 
-  <div class="number">
-    <%= f.label :completion_percentage %><br />   
-    <%= f.text_field :completion_percentage %>
-  </div>
-
+      <div class="number">
+        <%= f.label :completion_percent%>
+        <%= f.text_field :completion_percentage %>
+      </div>
+        
   <div class="actions">
     <%= f.submit %>
   </div>
+  </fieldset>
+
+</form>
+
 <% end %>

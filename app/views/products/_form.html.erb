@@ -12,17 +12,22 @@
       </ul>
     </div>
   <% end %>
-
+<form>
+  <fieldset>
+    <legend> New Product Info </legend>
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :overview %><br />
+    <%= f.label :overview %>
     <%= f.text_area :overview %>
   </div>
-  <div class="actions">
+    <div class="actions">
     <%= f.submit %>
   </div>
+</fieldset>
+</form>
+
 <% end %>
 

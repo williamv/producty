@@ -3,10 +3,6 @@ table
 {
 border-collapse:collapse;
 }
-table,th, td
-{
-border: 1px solid black;
-}
 
 table 
 {
@@ -14,18 +10,19 @@ width:100%;
 }
 th
 {
-height:50px;
+height:10%;
+width:100%;
 }
 
 td
 {
-height:50px;
+height:1.5em;
 vertical-align:bottom;
 }
 
 td
 {
-padding:15px;
+padding:1.1em;
 }
 
 table, td, th

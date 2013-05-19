@@ -14,6 +14,7 @@ class GoalsController < ApplicationController
   # GET /goals/1.json
   def show
     @goal = Goal.find(params[:id])
+    @new_goal = @product.goal.build
 
     respond_to do |format|
       format.html # show.html.erb
@@ -42,6 +43,7 @@ class GoalsController < ApplicationController
   # POST /goals
   # POST /goals.json
   def create
+    @product = Product.find(params[:product_id])
     @goal = Goal.new(params[:goal])
 
     respond_to do |format|

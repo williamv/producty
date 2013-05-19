@@ -29,8 +29,13 @@
 <% end %>
 
 </ul>
+</br>
+</br>
 
 <%= link_to '<= Back to the Product List', products_path %>     |<%= link_to '  Edit Product',edit_product_path(@product) %>     |
 <%= link_to '+ Add a Product Goal', new_product_goal_path(@product) %>
 
-<%= button_to 'Delete Product', { :action => "destroy"}, :confirm => "Are you sure?", :method => :delete %>
+</br>
+</br>
+
+<%= button_to 'Delete Product', { :action => "destroy"}, :confirm => "Are you sure?", :method => :delete, :class => 'delete_button' %>

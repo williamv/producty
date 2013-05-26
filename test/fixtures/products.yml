@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  overview: MyText
+  id: 1
+  name: Product 1
+  overview: Here's the first product.
 
 two:
-  name: MyString
-  overview: MyText
+  id: 2
+  name: Product 2
+  overview: Here's the second product

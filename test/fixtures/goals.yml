@@ -1,7 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  goal: MyString
+  goal: Goal 1
+  size: 100
+  completion_percentage: 25
 
 two:
   goal: MyString
+  size: 50
+  completion_percentage: 10

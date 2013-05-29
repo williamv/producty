@@ -18,7 +18,7 @@ class GoalTest < ActiveSupport::TestCase
 
   test "should only save with goal, percentage, size" do
      goal = Goal.new(:goal => "social goals", :completion_percentage => "100", :size => "1")
-     assert !goal.save, "Should save the goal with goal, completion, size"
+     assert goal.save, "Should save the goal with goal, completion, size"
    end
 
 end

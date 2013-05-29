@@ -7,5 +7,10 @@ one:
 
 two:
   id: 2
-  name: Product 2
+  name:
   overview: Here's the second product
+
+three:
+  id: 3
+  name:
+  overview:  
